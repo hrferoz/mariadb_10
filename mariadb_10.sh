@@ -2,6 +2,7 @@
 
 mkdir /root/mdb/
 cd /root/mdb/
+yum install rsync nmap lsof perl-DBI nc -y
 
 wget http://dl.marmotte.net/rpms/redhat/el7/x86_64/jemalloc-3.6.0-1.el7/jemalloc-3.6.0-1.el7.x86_64.rpm
 rpm -ivh jemalloc-3.6.0-1.el7.x86_64.rpm
