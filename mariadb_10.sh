@@ -10,11 +10,12 @@ wget http://dl.marmotte.net/rpms/redhat/el7/x86_64/jemalloc-3.6.0-1.el7/jemalloc
 rpm -ivh jemalloc-devel-3.6.0-1.el7.x86_64.rpm
 rpm --import http://yum.mariadb.org/RPM-GPG-KEY-MariaDB
 
-wget https://archive.mariadb.org/mariadb-10.1.21/yum/centos7-amd64/rpms/galera-25.3.19-1.rhel7.el7.centos.x86_64.rpm
-wget https://archive.mariadb.org/mariadb-10.1.21/yum/centos7-amd64/rpms/MariaDB-10.1.21-centos7-x86_64-client.rpm
-wget https://archive.mariadb.org/mariadb-10.1.21/yum/centos7-amd64/rpms/MariaDB-10.1.21-centos7-x86_64-common.rpm
-wget https://archive.mariadb.org/mariadb-10.1.21/yum/centos7-amd64/rpms/MariaDB-10.1.21-centos7-x86_64-server.rpm
-wget https://archive.mariadb.org/mariadb-10.1.21/yum/centos7-amd64/rpms/MariaDB-10.1.21-centos7-x86_64-compat.rpm
+
+wget https://archive.mariadb.org/mariadb-10.9/yum/centos7-amd64/rpms/galera-4-26.4.14-1.el7.centos.x86_64.rpm
+wget https://archive.mariadb.org/mariadb-10.9/yum/centos7-amd64/rpms/MariaDB-server-10.9.8-1.el7.centos.x86_64.rpm
+wget https://archive.mariadb.org/mariadb-10.9/yum/centos7-amd64/rpms/MariaDB-client-10.9.8-1.el7.centos.x86_64.rpm
+wget https://archive.mariadb.org/mariadb-10.9/yum/centos7-amd64/rpms/MariaDB-common-10.9.8-1.el7.centos.x86_64.rpm
+wget https://archive.mariadb.org/mariadb-10.9/yum/centos7-amd64/rpms/MariaDB-compat-10.9.8-1.el7.centos.x86_64.rpm
 
 rpm -ev --nodeps mariadb-libs-*
 yum install libaio -y
