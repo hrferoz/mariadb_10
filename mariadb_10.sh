@@ -17,8 +17,9 @@ wget https://archive.mariadb.org/mariadb-10.9/yum/centos7-amd64/rpms/MariaDB-cli
 wget https://archive.mariadb.org/mariadb-10.9/yum/centos7-amd64/rpms/MariaDB-common-10.9.8-1.el7.centos.x86_64.rpm
 wget https://archive.mariadb.org/mariadb-10.9/yum/centos7-amd64/rpms/MariaDB-compat-10.9.8-1.el7.centos.x86_64.rpm
 
+yum remove mariadb-libs.x86_64 -y 
 rpm -ev --nodeps mariadb-libs-*
 yum install libaio -y
 yum install boost-devel.x86_64 -y
 
-rpm -ivh MariaDB-10.1.21-centos7-x86_64-common.rpm MariaDB-10.1.21-centos7-x86_64-compat.rpm MariaDB-10.1.21-centos7-x86_64-client.rpm galera-25.3.19-1.rhel7.el7.centos.x86_64.rpm MariaDB-10.1.21-centos7-x86_64-server.rpm
+rpm -ivh galera-4-26.4.14-1.el7.centos.x86_64.rpm MariaDB-server-10.9.8-1.el7.centos.x86_64.rpm MariaDB-client-10.9.8-1.el7.centos.x86_64.rpm MariaDB-common-10.9.8-1.el7.centos.x86_64.rpm MariaDB-compat-10.9.8-1.el7.centos.x86_64.rpm
